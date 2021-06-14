@@ -1,0 +1,21 @@
+footer{
+    height: 75px;
+    padding: 20px;
+    box-sizing: border-box;
+    background: #f3bbc582;
+    border-top: 1px solid #f5a5b375;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+
+    &.position{
+        position: fixed;
+        bottom: 0;
+    }
+
+    a{
+        color: #000;
+        font-size: 18px;
+        text-decoration: none;    
+    }
+}

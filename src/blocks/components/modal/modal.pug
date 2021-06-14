@@ -1,0 +1,22 @@
+.modal
+    form.form
+        h3.form-title Create new item
+        .form-body 
+            .input-wrapper 
+                span.input-title Name: 
+                input(type="text" class='input-name') 
+            .input-wrapper 
+                span.input-title Image: 
+                input(type="file" placeholder='File upload' id='input-file' class='input-file')
+                label(for="input-file" class='input-file__button')
+                    span.input-file__button-placeholder File upload
+                    span.input-file__button-text Choose...
+            .input-wrapper 
+                span.input-title Description: 
+                textarea.input-textarea
+            .checkbox-wrapper
+                input(type="checkbox" class='checkbox-input' id='checked')
+                label.checkbox-text(for='checked') Show
+            .buttons-wrapper 
+                button(type="submit" class='button-submit' disabled) Ok 
+                button.button-cancel Cancel

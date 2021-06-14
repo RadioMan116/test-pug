@@ -1,0 +1,25 @@
+.header {
+  position: relative;
+  border-bottom: 1px solid #f5a5b375;
+  background: #f3bbc582;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
+  &-inner {
+    display: flex;
+  }
+
+  .burger {
+    background: url("../../../img/svg/burger.svg") no-repeat center;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+
+  .logo {
+    margin: 0 auto;
+  }
+}

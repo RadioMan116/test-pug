@@ -1,0 +1,14 @@
+extends ../layouts/default
+
+block variables
+	-var activeClass = 1;
+	-var bodyClass = true;
+
+block content
+	include ../helpers/mixins.pug
+	.card-list
+		- for (var i = 1; i < 14; i++)
+			+card('Item name', `image-${i}.jpeg`)
+	
+block scripts
+	script(src="js/main.js")
