@@ -404,12 +404,12 @@ ul {
 .burger-menu {
   position: absolute;
   top: 0;
-  background: deeppink;
+  background: #fa138e;
   width: 300px;
   height: 100%;
-  border: 1px solid deeppink;
+  border: 1px solid #fc138f;
   box-sizing: border-box;
-  transition: .3s ease-in-out;
+  transition: 0.3s ease-in-out;
   transform: translateY(-100%);
 }
 
@@ -428,34 +428,34 @@ ul {
   cursor: pointer;
 }
 
-.burger-list {
+.burger-menu .burger-list {
   display: flex;
   flex-direction: column;
   padding: 75px 0 0 0px;
   list-style: none;
 }
 
-.burger-item {
-  border: 1px solid pink;
+.burger-menu .burger-item {
+  border: 1px solid #f8bbc5;
 }
 
-.burger-item:last-child {
+.burger-menu .burger-item:last-child {
   border-top: none;
 }
 
-.burger-link {
+.burger-menu .burger-link {
   display: block;
   padding: 15px;
   text-decoration: none;
   color: #fff;
 }
 
-.burger-link.active {
+.burger-menu .burger-link.active {
   background: #f3bbc582;
 }
 
-.burger-link:hover {
-  background: plum;
+.burger-menu .burger-link:hover {
+  background: #dd9fdd;
   text-decoration: underline;
 }
 
@@ -489,7 +489,7 @@ ul {
   border: 2px solid;
   border-radius: 5px;
   box-sizing: border-box;
-  background: pink;
+  background: #fcbdc7;
   transition: .3s ease-in-out .3s;
   transform: translateY(-550%);
 }
@@ -568,11 +568,11 @@ ul {
 }
 
 .modal .form .checkbox-input:checked + .checkbox-text:before {
-  background: url("../img/svg/checkbox-active.svg") no-repeat center;
+  background: url("/img/svg/checkbox-active.svg") no-repeat center;
 }
 
 .modal .form .checkbox-input:disabled + .checkbox-text:before {
-  background: url("../img/svg/checkbox-default.svg") no-repeat center;
+  background: url("/img/svg/checkbox-default.svg") no-repeat center;
 }
 
 .modal .form .checkbox-text {
@@ -627,7 +627,7 @@ ul {
 }
 
 .header .burger {
-  background: url("../../../img/svg/burger.svg") no-repeat center;
+  background: url("/img/svg/burger.svg") no-repeat center;
   width: 40px;
   height: 40px;
   position: absolute;
