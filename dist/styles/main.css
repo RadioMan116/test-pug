@@ -380,7 +380,7 @@ template {
 
 @font-face {
   font-family: 'Roboto';
-  src: url(../../fonts/roboto.woff);
+  src: url(../fonts/roboto.woff);
 }
 
 h1,
@@ -402,15 +402,15 @@ ul {
 }
 
 .burger-menu {
+  box-sizing: border-box;
   position: absolute;
   top: 0;
-  background: #fa138e;
   width: 300px;
   height: 100%;
   border: 1px solid #fc138f;
-  box-sizing: border-box;
-  transition: 0.3s ease-in-out;
   transform: translateY(-100%);
+  transition: 0.3s ease-in-out;
+  background: #fa138e;
 }
 
 .burger-menu.active {
@@ -420,10 +420,10 @@ ul {
 .burger-menu .button-close {
   position: absolute;
   top: 36px;
-  transform: translateY(-50%);
   left: 19px;
   width: 40px;
   height: 40px;
+  transform: translateY(-50%);
   object-fit: none;
   cursor: pointer;
 }
@@ -431,7 +431,7 @@ ul {
 .burger-menu .burger-list {
   display: flex;
   flex-direction: column;
-  padding: 75px 0 0 0px;
+  padding: 75px 0 0 0;
   list-style: none;
 }
 
@@ -460,21 +460,21 @@ ul {
 }
 
 .modal {
-  opacity: 0;
+  position: absolute;
   width: 0;
   height: 0;
-  position: absolute;
+  opacity: 0;
 }
 
 .modal.active {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   top: 0;
   left: 0;
-  background: rgba(0, 0, 0, 0.2);
   width: 100%;
   height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background: rgba(0, 0, 0, 0.2);
   opacity: 1;
 }
 
@@ -483,21 +483,21 @@ ul {
 }
 
 .modal .form {
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   width: 300px;
   border: 2px solid;
-  border-radius: 5px;
-  box-sizing: border-box;
-  background: #fcbdc7;
-  transition: .3s ease-in-out .3s;
   transform: translateY(-550%);
+  transition: .3s ease-in-out .3s;
+  border-radius: 5px;
+  background: #fcbdc7;
 }
 
 .modal .form-title {
+  padding: 7px;
   text-align: center;
   border-bottom: 1px solid;
-  padding: 7px;
 }
 
 .modal .form-body {
@@ -515,21 +515,21 @@ ul {
 }
 
 .modal .form .input-name {
+  border: 1px solid;
   padding: 8px;
   border-radius: 5px;
-  border: 1px solid;
 }
 
 .modal .form .input-textarea {
+  border: 1px solid;
   padding: 8px;
   border-radius: 5px;
   resize: none;
-  border: 1px solid;
 }
 
 .modal .form .input-file {
-  visibility: hidden;
   position: absolute;
+  visibility: hidden;
   opacity: 0;
 }
 
@@ -540,20 +540,20 @@ ul {
 
 .modal .form .input-file__button-placeholder,
 .modal .form .input-file__button-text {
-  padding: 8px;
   border: 1px solid;
+  padding: 8px;
   background: #fff;
 }
 
 .modal .form .input-file__button-placeholder {
+  width: 150px;
   border-right: none;
   border-radius: 5px 0 0 5px;
-  width: 150px;
 }
 
 .modal .form .input-file__button-text {
-  border-radius: 0 5px 5px 0;
   width: 100px;
+  border-radius: 0 5px 5px 0;
 }
 
 .modal .form .checkbox-wrapper {
@@ -563,16 +563,16 @@ ul {
 }
 
 .modal .form .checkbox-input {
-  visibility: hidden;
   position: absolute;
+  visibility: hidden;
 }
 
 .modal .form .checkbox-input:checked + .checkbox-text:before {
-  background: url("/img/svg/checkbox-active.svg") no-repeat center;
+  background: url("../img/svg/checkbox-active.svg") no-repeat center;
 }
 
 .modal .form .checkbox-input:disabled + .checkbox-text:before {
-  background: url("/img/svg/checkbox-default.svg") no-repeat center;
+  background: url("../img/svg/checkbox-default.svg") no-repeat center;
 }
 
 .modal .form .checkbox-text {
@@ -599,8 +599,8 @@ ul {
 .modal .form .button-submit,
 .modal .form .button-cancel {
   width: 120px;
-  padding: 10px;
   border: 1px solid;
+  padding: 10px;
   border-radius: 5px;
   background: #fff;
   cursor: pointer;
@@ -627,7 +627,7 @@ ul {
 }
 
 .header .burger {
-  background: url("/img/svg/burger.svg") no-repeat center;
+  background: url("../img/svg/burger.svg") no-repeat center;
   width: 40px;
   height: 40px;
   position: absolute;
